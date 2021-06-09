@@ -54,7 +54,7 @@ const turnoComputadora = (puntosMinimos) => {
             puntosHTML[1].innerText = puntosComputadora;
          
         const imgCarta = document.createElement('img');
-            imgCarta.src= `/assets/cartas/${carta}.png`;
+            imgCarta.src= `/blackjack/assets/cartas/${carta}.png`;
             imgCarta.classList.add('carta');
             divCartasComputadora.append(imgCarta);
         if (puntosMinimos > 21 ){
@@ -69,7 +69,7 @@ btnPedir.addEventListener('click',()=>{
     puntosJugador = puntosJugador + valorCarta(carta);
     puntosHTML[0].innerText = puntosJugador;
     const imgCarta = document.createElement('img');
-    imgCarta.src= `/assets/cartas/${carta}.png`;
+    imgCarta.src= `/blackjack/assets/cartas/${carta}.png`;
     divCartasJugador.append(imgCarta);
     imgCarta.classList.add('carta');
     if (puntosJugador > 21){

@@ -70,7 +70,7 @@ const turnoComputadora = (puntosMinimos) => {
         }else{
             alert('Computadora Gana');
         }
-    },30);
+    },100);
 }
 //events
 btnPedir.addEventListener('click',()=>{
